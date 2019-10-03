@@ -34,7 +34,7 @@
     <!-- Nav tabs -->
     <ul class="nav nav-tabs">
       <li class="nav-item">
-        <a class="nav-link active" data-toggle="tab" href="#home">Requirement</a>
+        <a class="nav-link active" data-toggle="tab" href="#home" onclick="myFunction()">Requirement</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" data-toggle="tab" href="#menu1">Design</a>
@@ -43,18 +43,25 @@
         <a class="nav-link" data-toggle="tab" href="#menu2">Implement</a>
       </li>
     </ul>
-
+    <script>
+      function myFunction() {
+        // location.replace("./content_lab1.html")
+        location.reload(true);
+      }
+    </script>
     <!-- Tab panes -->
     <div class="tab-content">
       <div id="home" class="container tab-pane active"><br>
         <div>
           <table class="table table-bordered">
-            <thead style="font-size: 20px">
-              <tr style="text-align:center ; background-color: #FFFAF0">
-                <th scope="col" ><b>
-                    <p style="color: #EE6363">STT</p>
+            <thead style="font-size: 18px">
+              <tr style="text-align:center ; background-color: #5CACEE;color:#ffffff ">
+                <th scope="col"><b>
+                    <p>STT</p>
                   </b></th>
-                <th scope="col" ><p style="  color: #EE6363">Yêu cầu</p></th>
+                <th scope="col">
+                  <p>Yêu cầu</p>
+                </th>
 
               </tr>
             </thead>
@@ -96,215 +103,324 @@
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat.</p>
       </div>
+      <!-- phần imlement 1-->
       <div id="menu2" class="container tab-pane fade"><br>
-
-        <p style="text-align:center; font-size: 25px; color: #EE6363">Chức năng quản lý đặt phòng online</p>
-        <!---->
-
-
+        <section style="border-style: inset">
+          <p style="text-align:center; font-size: 25px; color: #EE6363">Chức năng quản lý đặt phòng online</p>
+          <!---->
 
 
 
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-lg"
-              style="background-color:#FF7F24; font-size: 20px; border-radius: 10px">Tìm kiếm</span>
-          </div>
-          <input type="text" class="form-control" aria-label="Text input with dropdown button"
-            style="border-radius: 10px">
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false" style="font-size: 15px; border-radius: 10px ; background-color: #CDCDB4
-              ">Tùy chọn</button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Tên khách</a>
-              <a class="dropdown-item" href="#">Ngày nhận</a>
-              <a class="dropdown-item" href="#">Ngày trả</a>
-              <a class="dropdown-item" href="#">Số đêm</a>
-              <a class="dropdown-item" href="#">Hạng phòng</a>
-              <a class="dropdown-item" href="#">Khách/P</a>
-              <a class="dropdown-item" href="#">Giá(VND)</a>
-              <div role="separator" class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Tất cả</a>
+
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-lg"
+                style="background-color:#ffa629; font-size: 20px; border-radius: 10px;color:#ffffff">Tìm kiếm</span>
             </div>
-          </div>
-        </div>
-
-        <br>
-
-        <!---->
-        <section>
-          <div class="container">
-            <table class="table table-bordered">
-              <thead>
-                <tr style="text-align:center ; background-color: #FFFAF0">
-                  <th>STT</th>
-                  <th>TÊN KHÁCH</th>
-                  <th>NGÀY NHẬN</th>
-                  <th>NGẦY TRẢ</th>
-                  <th>SỐ ĐÊM</th>
-                  <th>HẠNG PHÒNG</th>
-                  <th>KHÁCH/P</th>
-                  <th>GIÁ(VND)</th>
-                  <th>CHỨC NĂNG</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Huỳnh Quốc</td>
-                  <td>4/10/2019</td>
-                  <td>05/11/2019</td>
-                  <td>29</td>
-                  <td>Standard </td>
-                  <td>3</td>
-                  <td>45.308.000</td>
-                  <td>
-                    <button class="btn btn-lg btn-info mr-1" type="submit" value="" data-toggle="tooltip"
-                      title="Thông tin chi tiết" style="padding-right: 5px; padding-left: 5px; width: 30px;
-                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
-                      <img src="images/infor.png" alt="alert" height="20">
-                    </button>
-                    <button class="btn btn-lg btn-primary mr-1 " type="submit" value="" data-toggle="tooltip"
-                      title="Chỉnh sửa" style="padding-right: 5px; padding-left: 5px; width: 30px;
-                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
-                      <img src="images/edit.png" alt="update" height="20">
-                    </button>
-                    <button class="btn btn-lg btn-danger " type="submit" value="" value="" data-toggle="tooltip"
-                      title="Xóa" style="padding-right: 5px; padding-left: 5px; width: 30px;
-                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
-                      <img src="images/delete2.png" alt="delete" height="20">
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Nguyễn Thị Hồng</td>
-                  <td>30/10/2019</td>
-                  <td>05/11/2019</td>
-                  <td>5</td>
-                  <td>vip</td>
-                  <td>2</td>
-                  <td>19.999.000</td>
-                  <td>
-                    <button class="btn btn-lg btn-info mr-1" type="submit" value="" data-toggle="tooltip"
-                      title="Thông tin chi tiết" style="padding-right: 5px; padding-left: 5px; width: 30px;
-                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
-                      <img src="images/infor.png" alt="alert" height="20">
-                    </button>
-                    <button class="btn btn-lg btn-primary mr-1 " type="submit" value="" data-toggle="tooltip"
-                      title="Chỉnh sửa" style="padding-right: 5px; padding-left: 5px; width: 30px;
-                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
-                      <img src="images/edit.png" alt="update" height="20">
-                    </button>
-                    <button class="btn btn-lg btn-danger " type="submit" value="" value="" data-toggle="tooltip"
-                      title="Xóa" style="padding-right: 5px; padding-left: 5px; width: 30px;
-                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
-                      <img src="images/delete2.png" alt="delete" height="20">
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Nguyễn Thị Thu Thảo</td>
-                  <td>30/10/2019</td>
-                  <td>05/11/2019</td>
-                  <td>5</td>
-                  <td>Superior</td>
-                  <td>2</td>
-                  <td>15.308.000</td>
-                  <td>
-                    <button class="btn btn-lg btn-info mr-1" type="submit" value="" data-toggle="tooltip"
-                      title="Thông tin chi tiết" style="padding-right: 5px; padding-left: 5px; width: 30px;
-                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
-                      <img src="images/infor.png" alt="alert" height="20">
-                    </button>
-                    <button class="btn btn-lg btn-primary mr-1 " type="submit" value="" data-toggle="tooltip"
-                      title="Chỉnh sửa" style="padding-right: 5px; padding-left: 5px; width: 30px;
-                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
-                      <img src="images/edit.png" alt="update" height="20">
-                    </button>
-                    <button class="btn btn-lg btn-danger " type="submit" value="" value="" data-toggle="tooltip"
-                      title="Xóa" style="padding-right: 5px; padding-left: 5px; width: 30px;
-                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
-                      <img src="images/delete2.png" alt="delete" height="20">
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Nguyễn Văn A</td>
-                  <td>30/10/2019</td>
-                  <td>05/11/2019</td>
-                  <td>5</td>
-                  <td>Superior</td>
-                  <td>2</td>
-                  <td>15.308.000</td>
-                  <td>
-                    <button class="btn btn-lg btn-info mr-1" type="submit" value="" data-toggle="tooltip"
-                      title="Thông tin chi tiết" style="padding-right: 5px; padding-left: 5px; width: 30px;
-                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
-                      <img src="images/infor.png" alt="alert" height="20">
-                    </button>
-                    <button class="btn btn-lg btn-primary mr-1 " type="submit" value="" data-toggle="tooltip"
-                      title="Chỉnh sửa" style="padding-right: 5px; padding-left: 5px; width: 30px;
-                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
-                      <img src="images/edit.png" alt="update" height="20">
-                    </button>
-                    <button class="btn btn-lg btn-danger " type="submit" value="" value="" data-toggle="tooltip"
-                      title="Xóa" style="padding-right: 5px; padding-left: 5px; width: 30px;
-                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
-                      <img src="images/delete2.png" alt="delete" height="20">
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Nguyễn Văn A</td>
-                  <td>30/10/2019</td>
-                  <td>05/11/2019</td>
-                  <td>5</td>
-                  <td>Superior</td>
-                  <td>2</td>
-                  <td>15.308.000</td>
-                  <td>
-                    <button class="btn btn-lg btn-info mr-1" type="submit" value="" data-toggle="tooltip"
-                      title="Thông tin chi tiết" style="padding-right: 5px; padding-left: 5px; width: 30px;
-                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
-                      <img src="images/infor.png" alt="alert" height="20">
-                    </button>
-                    <button class="btn btn-lg btn-primary mr-1 " type="submit" value="" data-toggle="tooltip"
-                      title="Chỉnh sửa" style="padding-right: 5px; padding-left: 5px; width: 30px;
-                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
-                      <img src="images/edit.png" alt="update" height="20">
-                    </button>
-                    <button class="btn btn-lg btn-danger " type="submit" value="" value="" data-toggle="tooltip"
-                      title="Xóa" style="padding-right: 5px; padding-left: 5px; width: 30px;
-                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
-                      <img src="images/delete2.png" alt="delete" height="20">
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="row no-gutters my-5">
-            <div class="col text-center">
-              <div class="block-27">
-                <ul>
-                  <li><a href="#">&lt;</a></li>
-                  <li class="active"><span>1</span></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                  <li><a href="#">&gt;</a></li>
-                </ul>
+            <input type="text" class="form-control" aria-label="Text input with dropdown button"
+              style="border-radius: 10px">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" style="font-size: 15px; border-radius: 10px ; background-color: #CDCDB4
+              ">Tùy chọn</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Tên khách</a>
+                <a class="dropdown-item" href="#">Ngày nhận</a>
+                <a class="dropdown-item" href="#">Ngày trả</a>
+                <a class="dropdown-item" href="#">Số đêm</a>
+                <a class="dropdown-item" href="#">Hạng phòng</a>
+                <a class="dropdown-item" href="#">Khách/P</a>
+                <a class="dropdown-item" href="#">Giá(VND)</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Tất cả</a>
               </div>
             </div>
           </div>
+
+          <br>
+
+          <!---->
+          <section>
+            <div class="container">
+              <table class="table table-bordered">
+                <thead>
+                  <tr style="text-align:center ; background-color: #5CACEE;color:#ffffff ">
+                    <th>STT</th>
+                    <th>TÊN KHÁCH</th>
+                    <th>NGÀY NHẬN</th>
+                    <th>NGẦY TRẢ</th>
+                    <th>SỐ ĐÊM</th>
+                    <th>HẠNG PHÒNG</th>
+                    <th>KHÁCH/P</th>
+                    <th>GIÁ(VND)</th>
+                    <th>CHỨC NĂNG</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Huỳnh Quốc</td>
+                    <td>4/10/2019</td>
+                    <td>05/11/2019</td>
+                    <td>29</td>
+                    <td>Standard </td>
+                    <td>3</td>
+                    <td>45.308.000</td>
+                    <td>
+                      <button class="btn btn-lg btn-info mr-1" type="submit" value="" data-toggle="tooltip"
+                        title="Thông tin chi tiết" style="padding-right: 5px; padding-left: 5px; width: 30px;
+                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
+                        <img src="images/infor.png" alt="alert" height="20">
+                      </button>
+                      <button class="btn btn-lg btn-primary mr-1 " type="submit" value="" data-toggle="tooltip"
+                        title="Chỉnh sửa" style="padding-right: 5px; padding-left: 5px; width: 30px;
+                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
+                        <img src="images/edit.png" alt="update" height="20">
+                      </button>
+                      <button class="btn btn-lg btn-danger " type="submit" value="" value="" data-toggle="tooltip"
+                        title="Xóa" style="padding-right: 5px; padding-left: 5px; width: 30px;
+                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
+                        <img src="images/delete2.png" alt="delete" height="20">
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Nguyễn Thị Hồng</td>
+                    <td>30/10/2019</td>
+                    <td>05/11/2019</td>
+                    <td>5</td>
+                    <td>vip</td>
+                    <td>2</td>
+                    <td>19.999.000</td>
+                    <td>
+                      <button class="btn btn-lg btn-info mr-1" type="submit" value="" data-toggle="tooltip"
+                        title="Thông tin chi tiết" style="padding-right: 5px; padding-left: 5px; width: 30px;
+                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
+                        <img src="images/infor.png" alt="alert" height="20">
+                      </button>
+                      <button class="btn btn-lg btn-primary mr-1 " type="submit" value="" data-toggle="tooltip"
+                        title="Chỉnh sửa" style="padding-right: 5px; padding-left: 5px; width: 30px;
+                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
+                        <img src="images/edit.png" alt="update" height="20">
+                      </button>
+                      <button class="btn btn-lg btn-danger " type="submit" value="" value="" data-toggle="tooltip"
+                        title="Xóa" style="padding-right: 5px; padding-left: 5px; width: 30px;
+                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
+                        <img src="images/delete2.png" alt="delete" height="20">
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Nguyễn Thị Thu Thảo</td>
+                    <td>30/10/2019</td>
+                    <td>05/11/2019</td>
+                    <td>5</td>
+                    <td>Superior</td>
+                    <td>2</td>
+                    <td>15.308.000</td>
+                    <td>
+                      <button class="btn btn-lg btn-info mr-1" type="submit" value="" data-toggle="tooltip"
+                        title="Thông tin chi tiết" style="padding-right: 5px; padding-left: 5px; width: 30px;
+                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
+                        <img src="images/infor.png" alt="alert" height="20">
+                      </button>
+                      <button class="btn btn-lg btn-primary mr-1 " type="submit" value="" data-toggle="tooltip"
+                        title="Chỉnh sửa" style="padding-right: 5px; padding-left: 5px; width: 30px;
+                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
+                        <img src="images/edit.png" alt="update" height="20">
+                      </button>
+                      <button class="btn btn-lg btn-danger " type="submit" value="" value="" data-toggle="tooltip"
+                        title="Xóa" style="padding-right: 5px; padding-left: 5px; width: 30px;
+                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
+                        <img src="images/delete2.png" alt="delete" height="20">
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>30/10/2019</td>
+                    <td>05/11/2019</td>
+                    <td>5</td>
+                    <td>Superior</td>
+                    <td>2</td>
+                    <td>15.308.000</td>
+                    <td>
+                      <button class="btn btn-lg btn-info mr-1" type="submit" value="" data-toggle="tooltip"
+                        title="Thông tin chi tiết" style="padding-right: 5px; padding-left: 5px; width: 30px;
+                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
+                        <img src="images/infor.png" alt="alert" height="20">
+                      </button>
+                      <button class="btn btn-lg btn-primary mr-1 " type="submit" value="" data-toggle="tooltip"
+                        title="Chỉnh sửa" style="padding-right: 5px; padding-left: 5px; width: 30px;
+                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
+                        <img src="images/edit.png" alt="update" height="20">
+                      </button>
+                      <button class="btn btn-lg btn-danger " type="submit" value="" value="" data-toggle="tooltip"
+                        title="Xóa" style="padding-right: 5px; padding-left: 5px; width: 30px;
+                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
+                        <img src="images/delete2.png" alt="delete" height="20">
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>30/10/2019</td>
+                    <td>05/11/2019</td>
+                    <td>5</td>
+                    <td>Superior</td>
+                    <td>2</td>
+                    <td>15.308.000</td>
+                    <td>
+                      <button class="btn btn-lg btn-info mr-1" type="submit" value="" data-toggle="tooltip"
+                        title="Thông tin chi tiết" style="padding-right: 5px; padding-left: 5px; width: 30px;
+                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
+                        <img src="images/infor.png" alt="alert" height="20">
+                      </button>
+                      <button class="btn btn-lg btn-primary mr-1 " type="submit" value="" data-toggle="tooltip"
+                        title="Chỉnh sửa" style="padding-right: 5px; padding-left: 5px; width: 30px;
+                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
+                        <img src="images/edit.png" alt="update" height="20">
+                      </button>
+                      <button class="btn btn-lg btn-danger " type="submit" value="" value="" data-toggle="tooltip"
+                        title="Xóa" style="padding-right: 5px; padding-left: 5px; width: 30px;
+                                         height: 50px; background-color: #ffffff; border-color: #ffffff ">
+                        <img src="images/delete2.png" alt="delete" height="20">
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row no-gutters my-5">
+              <div class="col text-center">
+                <div class="block-27">
+                  <ul>
+                    <li><a href="#">&lt;</a></li>
+                    <li class="active"><span>1</span></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&gt;</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <button style="float: right; margin-bottom: 20px; border-radius: 10px; background-color: teal">
+
+              <a href="#" style="text-align:center; font-size: 24px; color: rgb(243, 240, 240)">
+                <img src="./images/new.png" width="24px" alt="Thêm dữ liệu" target="_blank"> Thêm mới</a>
+            </button><br><br>
+          </section>
+        </section> <br>
+        <!--chức năng 2-->
+        <section>
+          <div>
+            <p style="text-align:center; font-size: 25px; color: #EE6363">Chức năng đặt phòng online</p>
+          </div>
+
+          <div class="container" style="margin-top: 40px;">
+            <div class="panel panel-primary">
+              <div class="panel-heading" style="background-color: #5CACEE">Thông tin của bạn</div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="control-label">Tên Khách</label>
+                      <input type="text" class="form-control" name="fname" id="fname">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="control-label">Hạng phòng</label>
+                      <input type="text" class="form-control" name="lname" id="lname">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="control-label">Email:</label>
+                      <input type="text" class="form-control" name="email" id="email">
+                    </div>
+                  </div>
+                  <div class='col-md-6'>
+                    <div class="form-group">
+                      <label class="control-label">Số điện thoại:</label>
+                      <input type="text" class="form-control" name="email" id="email">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="control-label">Ngày nhận phòng</label>
+                      <div class='input-group date' id='datetimepicker1'>
+                        <input type='text' class="form-control" />
+                        <span class="input-group-addon">
+
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-md-6'>
+                    <div class="form-group">
+                      <label class="control-label">Ngày trả phòng</label>
+                      <div class='input-group date' id='datetimepicker1'>
+                        <input type='text' class="form-control" />
+                        <span class="input-group-addon">
+
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="control-label">Số Khách/Phòng</label>
+                      <input type="text" class="form-control" name="fname" id="fname">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="control-label">Số phòng</label>
+                      <input type="text" class="form-control" name="lname" id="lname">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="control-label">Quốc Tịch</label>
+                      <input type="text" class="form-control" name="fname" id="fname">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="control-label">Mã giảm giá(nếu có)</label>
+                      <input type="text" class="form-control" name="lname" id="lname">
+                    </div>
+                  </div>
+                </div>
+                <input type="submit" class="btn btn-primary" value="Xác Nhận"
+                  style="text-align:center;border-radius: 10px; font-size: 24px; float: right;background-color: teal">
+                <input type="submit" class="btn btn-primary" value="Hủy"
+                  style="text-align:center;border-radius: 10px; font-size: 24px; float: right; margin-right: 10px">
+              </div>
+            </div>
+
+          </div>
         </section>
       </div>
+      <!--kết thúc phần implement 1-->
     </div>
   </div>
 
